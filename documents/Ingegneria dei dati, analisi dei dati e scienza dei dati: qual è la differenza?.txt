@@ -1,0 +1,39 @@
+Introduzione
+
+In qualità di fornitore leader di servizi relativi ai dati per i nostri numerosi clienti leader del settore e blue-chip, a volte dobbiamo spiegare la differenza tra le nostre varie capacità relative ai dati. Aptude realizza molti progetti di dati di alto profilo, il che significa che abbiamo sviluppato ampiezza e profondità di funzionalità.
+
+Se stai cercando un chiaro ritorno sull'investimento (ROI) dai tuoi progetti di dati, è importante sapere che tipo di progetto di dati hai effettivamente bisogno per ottenere i benefici che desideri. Quasi tutti i progetti di data science comporteranno un ROI di qualche tipo; tale vantaggio potrebbe essere dovuto alla diminuzione degli errori grazie a dati più chiari o potrebbe essere una spesa di marketing migliore come risultato di dati più puliti e accurati. O addirittura risparmi sui costi grazie a routing e prezzi in tempo reale.
+
+Tuttavia, al fine di realizzare questi vantaggi, ne consegue che tu come leader aziendale e decisore devi prima sapere cosa vuoi ottenere. In questo blog, delineeremo chiaramente tra le diverse attività sui dati in cui potresti investire. Infine, discuteremo come determinare con quale di queste devi iniziare per il tuo prossimo progetto basato sui dati.
+
+Il problema con raggruppare tutte le attività di dati insieme
+
+Ma prima, qual è il problema quando si raggruppano tutte le attività di dati?
+
+I dati sono dati sono dati, giusto?
+
+Non così in fretta.
+
+Sebbene sia possibile ottenere il ROI da qualsiasi ulteriore attenzione alla qualità e alla visualizzazione dei dati, al fine di ottenere i massimi risultati, è utile sapere che tipo di risultati desideri ... e poi lavorare a ritroso per determinare quali attività di dati potrebbero portarti lì.
+
+Supponiamo, ad esempio, che tu sia un'azienda di trasporti che desidera implementare percorsi più dinamici utilizzando l'intelligenza artificiale e l'apprendimento automatico. Affinché ciò accada, il tuo team di dati dovrà coordinarsi con più team all'interno della tua organizzazione per coordinare e determinare:
+
+I tuoi attuali processi di instradamento e determinazione dei prezzi rispetto al tuo stato futuro ideale
+Processi dello stato futuro ideali della tua organizzazione che utilizzano tecnologie basate sui dati
+Le tue attuali regole di determinazione del prezzo e tassi di errore
+Le tue regole di instradamento e i tassi di errore
+Il costo in termini di tempo perso, perdita di produttività o perdita di entrate a causa di errori
+Set di dati disponibili rispetto a quelli necessari
+Fonti di dati attuali e qualità
+Gli algoritmi necessari per creare percorsi e prezzi dinamici
+I set di dati necessari per implementare e testare gli algoritmi
+E questa è solo una frazione di ciò di cui avrai bisogno per implementare un progetto del genere.
+
+Per andare avanti con queste attività, puoi determinare facilmente se hai bisogno di team in grado di fare cosa?
+
+Ingegneria dei dati
+analisi dei dati
+Science Data
+Predictive Analytics
+QA / Prova
+In questo blog, discuteremo ciascuno di questi elementi della scienza dei dati in modo da capire perché gli specialisti in un'area non sono intercambiabili con gli specialisti in un'altra.

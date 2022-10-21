@@ -1,0 +1,14 @@
+DESCRIZIONE DEL PERCORSO
+Artificial Intelligence e Machine Learning non sono la stessa cosa. Spesso confuse, si tratta di due tecnologie collegate tra di loro ma differenti: l’intelligenza artificiale crea l’architettura, il machine learning la migliora.
+
+L’intelligenza artificiale, infatti, è la scienza che da anni punta a sviluppare macchine in grado di prendere delle decisioni in perfetta autonomia. L’apprendimento avanzato, invece, è l’algoritmo che rende i computer ancora più intelligenti.
+
+L’intelligenza artificiale si può definire come la scienza che sviluppa l’architettura necessaria affinché le macchine funzionino come il cervello umano e alle relative reti neurali. Si tratta di un sistema informatico che cerca di simulare le reti neuronali biologiche. L’obiettivo finale dell’AI (artificial intelligence) è quello di creare dei computer con capacità di ragionamento simili (se non uguali) all’essere umano.
+
+Il machine learning, invece, è l’algoritmo che permette alle macchine intelligenti di migliorarsi con il tempo, esattamente come avviene con il cervello umano. Senza l’apprendimento avanzato, infatti, non sarebbe possibile mettere “in moto” l’intelligenza artificiale.
+
+Un esempio classico di machine learning è rappresentato dai sistemi di visione artificiale, ovvero la capacità di un sistema computazionale di riconoscere oggetti acquisiti digitalmente da sensori di immagine. L’algoritmo impiegato in questi casi dovrà riconoscere determinati oggetti, distinguendoli tra animali, cose e persone, e nello stesso tempo imparando dalle situazioni, ovvero avere memoria di ciò che si è fatto per impiegarlo efficacemente nelle prossime acquisizioni di visione artificiale impiegate soprattutto nei sistemi Automotive.
+
+Più aumenta la complessità dei dati e relativi algoritmi per interpretare la realtà, più l’approccio all’apprendimento automatico si avvicina alla struttura delle reti neurali del cervello. L’apprendimento automatico assume il termine quindi di apprendimento profondo o deep learning.
+
+Il percorso aiuta i partecipanti a comprendere con maggiore chiarezza il mondo dell’intelligenza artificiale e cogliere le potenzialità applicative delle tecnologie di apprendimento automatico.

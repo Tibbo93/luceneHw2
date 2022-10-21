@@ -1,0 +1,13 @@
+Chi è un ingegnere di dati e come diventare un ingegnere di dati?
+
+Una semplice guida su come cavalcare le ondate di Data Engineering e non lasciarti trascinare.
+Sembra che oggigiorno tutti vogliano diventare un Data Scientist. Ma per quanto riguarda l’ingegneria dei dati? Nel suo cuore, è un ibrido di sorta tra un analista di dati e uno scienziato di dati; L’ingegnere dati è in genere responsabile della gestione dei flussi di lavoro dei dati, delle pipeline e dei processi ETL. Alla luce di queste importanti funzioni, è la parola d’ordine più calda al giorno d’oggi che sta attivamente guadagnando slancio.
+Alto salario e grande richiesta: questa è solo una piccola parte di ciò che rende questo lavoro caldo, caldo, caldo! Se vuoi essere un tale eroe, non è mai troppo tardi per iniziare ad imparare. In questo post, ho raccolto tutte le informazioni necessarie per aiutarti a muovere i primi passi.
+Quindi iniziamo!
+Che cos’è l’ingegneria dei dati?
+Francamente, non esiste una spiegazione migliore di questa:
+“Uno scienziato può scoprire una nuova stella, ma non può crearne una. Dovrebbe chiedere a un ingegnere di farlo per lui. “
+–Gordon Lindsay Glegg
+Quindi, il ruolo del Data Engineer è davvero prezioso.
+Dal titolo deriva che l’ingegneria dei dati è associata ai dati, vale a dire la loro consegna, conservazione ed elaborazione. Di conseguenza, il compito principale degli ingegneri è fornire un’infrastruttura affidabile per i dati. Se osserviamo la Gerarchia dei bisogni dell’IA, l’ingegneria dei dati compie le prime 2–3 fasi: raccolta, spostamento e archiviazione, preparazione dei dati.
+Pertanto, per qualsiasi organizzazione basata sui dati, è fondamentale impiegare un ingegnere dei dati per essere al top.

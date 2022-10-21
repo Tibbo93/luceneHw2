@@ -1,0 +1,11 @@
+L’intelligenza artificiale (o IA) è una disciplina che studia se e in che modo si possano realizzare sistemi informatici intelligenti in grado di simulare la capacità e il comportamento del pensiero umano.
+
+«L'intelligenza artificiale è una disciplina appartenente all'informatica che studia i fondamenti teorici, le metodologie e le tecniche che consentono la progettazione di sistemi hardware e sistemi di programmi software capaci di fornire all'elaboratore elettronico prestazioni che, a un osservatore comune, sembrerebbero essere di pertinenza esclusiva dell’intelligenza umana.»
+(Marco Somalvico)
+Definizioni specifiche possono essere date focalizzandosi o sui processi interni di ragionamento o sul comportamento esterno del sistema intelligente e utilizzando come misura di efficacia o la somiglianza con il comportamento umano o con un comportamento ideale, detto razionale:
+
+Agire in modo analogo a quanto fatto dagli esseri umani: il risultato dell’operazione compiuta dal sistema intelligente non è distinguibile da quella svolta da un umano.
+Pensare in modo analogo a quanto fatto dagli esseri umani: il processo che porta il sistema intelligente a risolvere un problema ricalca quello umano. Questo approccio è associato alle scienze cognitive.
+Pensare razionalmente: il processo che porta il sistema intelligente a risolvere un problema è un procedimento formale che si rifà alla logica.
+Agire razionalmente: il processo che porta il sistema intelligente a risolvere il problema è quello che gli permette di ottenere il miglior risultato atteso date le informazioni a disposizione.
+L'intelligenza artificiale è una disciplina dibattuta tra scienziati e filosofi poiché manifesta aspetti etici oltre che teorici e pratici. Stephen Hawking nel 2014 ha messo in guardia riguardo ai pericoli dell'intelligenza artificiale, considerandola una minaccia per la sopravvivenza dell'umanità.

@@ -1,0 +1,11 @@
+Nel mondo moderno, è difficile pensare a un settore che non sia stato rivoluzionato dalla scienza dei dati. Molti magari non capiscono i dettagli intricati di questa disciplina, ma ne sanno abbastanza per capire che la scienza dei dati è un campo in forte crescita. Tutti noi troviamo sconti personalizzati nella nostra casella di posta elettronica, facciamo domande a Siri o facciamo affidamento sulla nostra banca per individuare e contenere potenziali attività fraudolente.
+
+Mentre noi ci godiamo i frutti di chi opera nel campo della data science, altre persone lavorano assiduamente dietro le quinte. Questi addetti sono incaricati di creare le pipeline di dati e i data warehouse che consentono ai data scientist di scrivere e ottimizzare algoritmi per migliorare la nostra vita quotidiana.
+
+Chi sono queste figure? Sono gli "ingegneri dei dati", o data engineer.
+
+Che cos'è l'ingegneria dei dati?
+Le conclusioni tratte da grandi set di dati sono utili solo se è garantita l'integrità dei dati. Senza un'architettura che possa strutturare e formattare set di dati sempre più grandi e in continuo cambiamento, i data scientist non possono fare previsioni accurate. È qui che entra in gioco l'ingegneria dei dati.
+
+Il Data Engineering è il processo di raccolta, conversione e convalida dei dati per l'analisi. In particolare, gli ingegneri dei dati costruiscono data warehouse per consentire di prendere decisioni guidate dai dati. L'ingegneria dei dati getta le basi per le applicazioni della data science nel mondo reale. Lavorando in armonia, ingegneri e scienziati dei dati possono fornire continuamente informazioni preziose.
+

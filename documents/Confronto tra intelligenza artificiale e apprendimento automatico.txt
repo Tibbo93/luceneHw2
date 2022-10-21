@@ -1,0 +1,17 @@
+Differenza tra intelligenza artificiale e apprendimento automatico
+
+L'intelligenza artificiale e l'apprendimento automatico sono strettamente correlati. A causa di questa relazione, quando esamini il rapporto tra intelligenza artificiale e apprendimento automatico, esamini in effetti l'interazione tra questi due approcci.
+Che cos'è l'intelligenza artificiale?
+
+L'intelligenza artificiale è la capacità di un sistema di computer di imitare le funzioni cognitive umane come l'apprendimento e la risoluzione dei problemi. Tramite l'intelligenza artificiale, un sistema di computer usa la matematica e la logica per simulare il ragionamento adottato dalle persone per apprendere da nuove informazioni e prendere decisioni.
+L'intelligenza artificiale e l'apprendimento automatico sono la stessa cosa?
+
+Anche se l'intelligenza artificiale e l'apprendimento automatico sono strettamente correlati, non sono la stessa cosa. Machine Learning è considerato un sottoinsieme dell'intelligenza artificiale.
+Che cos'è Machine Learning?
+
+Machine Learning è un'applicazione di intelligenza artificiale. È il processo di utilizzo di modelli matematici di dati per aiutare un computer a imparare senza istruzioni dirette. Ciò consente a un sistema di continuare ad apprendere e migliorare autonomamente, in base all'esperienza.
+
+Qual è la relazione tra intelligenza artificiale e apprendimento automatico?
+
+Un \"computer intelligente\" usa l'intelligenza artificiale per pensare come un essere umano ed eseguire attività in modo autonomo. L'apprendimento automatico è l'approccio usato da un sistema informatico per sviluppare la rispettiva intelligenza.
+Per eseguire il training di un computer affinché simuli il modo in cui gli esseri umani pensano è ad esempio possibile usare una rete neurale, ovvero una serie di algoritmi modellati in base al cervello umano. La rete neurale aiuta il sistema informatico a ottenere l'intelligenza artificiale tramite Deep Learning. Questa stretta relazione è il motivo per cui il confronto tra intelligenza artificiale e apprendimento automatico è in effetti un'analisi delle modalità di interazione tra intelligenza artificiale e apprendimento automatico.
