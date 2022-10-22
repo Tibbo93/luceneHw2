@@ -40,17 +40,13 @@ public class Indexer {
     private String documentsPath;
     private Directory indexDirectory;
 
-    public Indexer(String indexPath, String documentsPath) {
-        try {
-            this.indexPath = indexPath;
-            this.documentsPath = documentsPath;
-            this.indexDirectory = FSDirectory.open(Paths.get(indexPath));
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
+    public Indexer(String indexPath, String documentsPath) throws IOException {
+        this.indexPath = indexPath;
+        this.documentsPath = documentsPath;
+        this.indexDirectory = FSDirectory.open(Paths.get(indexPath));
     }
 
-    public void createIndex() {
+    public void createIndex() throws IOException {
         try (DirectoryStream<Path> stream = Files.newDirectoryStream(Paths.get(this.documentsPath))) {
             Analyzer analyzer = CustomAnalyzer.builder()
                     .withTokenizer(WhitespaceTokenizerFactory.class)
@@ -65,6 +61,7 @@ public class Indexer {
 
             IndexWriterConfig config = new IndexWriterConfig(analyzer);
             config.setCodec(new SimpleTextCodec());
+            config.setOpenMode(IndexWriterConfig.OpenMode.CREATE);
             IndexWriter writer = new IndexWriter(indexDirectory, config);
 
             for (Path file : stream) {
@@ -87,16 +84,10 @@ public class Indexer {
             writer.commit();
             writer.close();
             System.out.println("Index created successfully");
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
         }
     }
 
-    public void close() {
-        try {
-            indexDirectory.close();
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
+    public void close() throws IOException {
+        indexDirectory.close();
     }
 }

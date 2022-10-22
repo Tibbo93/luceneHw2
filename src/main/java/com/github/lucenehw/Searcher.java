@@ -34,17 +34,14 @@ public class Searcher {
     private IndexReader reader;
     private IndexSearcher searcher;
 
-    public Searcher(String indexPath) {
-        try {
-            this.indexDirectory = FSDirectory.open(Paths.get(indexPath));
-            this.reader = DirectoryReader.open(this.indexDirectory);
-            this.searcher = new IndexSearcher(this.reader);
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
+    public Searcher(String indexPath) throws IOException {
+        this.indexDirectory = FSDirectory.open(Paths.get(indexPath));
+        this.reader = DirectoryReader.open(this.indexDirectory);
+        this.searcher = new IndexSearcher(this.reader);
+
     }
 
-    public void search(String query) {
+    public void search(String query) throws ParseException, IOException {
         Pattern pattern = Pattern.compile(QUERY_PATTERN);
         Matcher matcher = pattern.matcher(query);
 
@@ -56,45 +53,37 @@ public class Searcher {
         }
     }
 
-    private void runQuery(String field, String sequence) {
-        try {
-            System.out.printf("Field: %s, query: %s%n%n", field, sequence);
-            QueryParser parser;
-            if (field.equals("contenuto")) {
-                parser = new QueryParser(field, new ItalianAnalyzer());
-            } else {
-                Analyzer analyzer = CustomAnalyzer.builder()
-                        .withTokenizer(WhitespaceTokenizerFactory.class)
-                        .addTokenFilter(LowerCaseFilterFactory.class)
-                        .addTokenFilter(WordDelimiterGraphFilterFactory.class)
-                        .build();
-                parser = new QueryParser(field, analyzer);
-            }
+    private void runQuery(String field, String sequence) throws ParseException, IOException {
+        System.out.printf("Field: %s, query: %s%n%n", field, sequence);
+        QueryParser parser;
+        if (field.equals("contenuto")) {
+            parser = new QueryParser(field, new ItalianAnalyzer());
+        } else {
+            Analyzer analyzer = CustomAnalyzer.builder()
+                    .withTokenizer(WhitespaceTokenizerFactory.class)
+                    .addTokenFilter(LowerCaseFilterFactory.class)
+                    .addTokenFilter(WordDelimiterGraphFilterFactory.class)
+                    .build();
+            parser = new QueryParser(field, analyzer);
+        }
 
-            Query query = parser.parse(sequence);
+        Query query = parser.parse(sequence);
 
-            TopDocs hits = searcher.search(query, 10);
-            if (hits.scoreDocs.length != 0) {
-                System.out.println("Result:");
-                for (int i = 0; i < hits.scoreDocs.length; i++) {
-                    ScoreDoc scoreDoc = hits.scoreDocs[i];
-                    Document doc = searcher.doc(scoreDoc.doc);
-                    System.out.printf("%d) %s%n", i + 1, doc.get("titolo"));
-                }
-            } else {
-                System.out.println("No results found");
+        TopDocs hits = searcher.search(query, 10);
+        if (hits.scoreDocs.length != 0) {
+            System.out.println("Result:");
+            for (int i = 0; i < hits.scoreDocs.length; i++) {
+                ScoreDoc scoreDoc = hits.scoreDocs[i];
+                Document doc = searcher.doc(scoreDoc.doc);
+                System.out.printf("%d) %s%n", i + 1, doc.get("titolo"));
             }
-        } catch (IOException | ParseException e) {
-            System.out.println(e.getMessage());
+        } else {
+            System.out.println("No results found");
         }
     }
 
-    public void close() {
-        try {
-            this.indexDirectory.close();
-            this.reader.close();
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
+    public void close() throws IOException {
+        this.indexDirectory.close();
+        this.reader.close();
     }
 }
