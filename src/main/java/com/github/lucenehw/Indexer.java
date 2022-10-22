@@ -3,7 +3,6 @@ package com.github.lucenehw;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.core.*;
 import org.apache.lucene.analysis.custom.CustomAnalyzer;
@@ -30,7 +29,6 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
-@Slf4j
 @Setter
 @Getter
 @NoArgsConstructor
@@ -48,7 +46,7 @@ public class Indexer {
             this.documentsPath = documentsPath;
             this.indexDirectory = FSDirectory.open(Paths.get(indexPath));
         } catch (IOException e) {
-            log.error("{}", e.getMessage());
+            System.out.println(e.getMessage());
         }
     }
 
@@ -56,6 +54,7 @@ public class Indexer {
         try (DirectoryStream<Path> stream = Files.newDirectoryStream(Paths.get(this.documentsPath))) {
             Analyzer analyzer = CustomAnalyzer.builder()
                     .withTokenizer(WhitespaceTokenizerFactory.class)
+                    .addTokenFilter(LowerCaseFilterFactory.class)
                     .addTokenFilter(WordDelimiterGraphFilterFactory.class)
                     .build();
 
@@ -71,12 +70,12 @@ public class Indexer {
             for (Path file : stream) {
                 BufferedReader reader = Files.newBufferedReader(file, StandardCharsets.UTF_8);
                 StringBuilder content = new StringBuilder();
-                String line = null;
+                String line;
                 while ((line = reader.readLine()) != null) {
                     content.append(line);
                     content.append(WHITESPACE);
                 }
-                log.info("{}", content);
+
                 Document doc = new Document();
                 doc.add(new TextField("titolo", file.getFileName().toString().replace(".txt", ""), Field.Store.YES));
                 doc.add(new TextField("contenuto", content.toString(), Field.Store.YES));
@@ -86,9 +85,18 @@ public class Indexer {
             }
 
             writer.commit();
-            log.info("Index created successfully");
+            writer.close();
+            System.out.println("Index created successfully");
         } catch (IOException e) {
-            log.error("{}", e.getMessage());
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public void close() {
+        try {
+            indexDirectory.close();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
         }
     }
 }

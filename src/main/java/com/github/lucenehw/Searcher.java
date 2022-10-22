@@ -3,7 +3,6 @@ package com.github.lucenehw;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.core.LowerCaseFilterFactory;
 import org.apache.lucene.analysis.core.WhitespaceTokenizerFactory;
@@ -24,7 +23,6 @@ import java.nio.file.Paths;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-@Slf4j
 @Setter
 @Getter
 @NoArgsConstructor
@@ -44,7 +42,6 @@ public class Searcher {
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
-
     }
 
     public void search(String query) {
