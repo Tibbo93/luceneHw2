@@ -1,0 +1,12 @@
+Definizione di data warehouse
+Un data warehouse è un tipo di sistema di data management progettato per abilitare e supportare le attività di business intelligence (BI), in particolare gli analytics. I data warehouse servono esclusivamente a eseguire query e analisi e spesso contengono grandi quantità di dati storici. I dati all'interno di un data warehouse sono generalmente derivati da una vasta gamma di origini come i file di registro dell'applicazione e le applicazioni di transazione.
+
+Un data warehouse centralizza e consolida grandi quantità di dati da più origini. Le sue capacità analitiche consentono alle organizzazioni di ricavare importanti insight sul business dai loro dati per migliorare il processo decisionale. Nel tempo, crea un record storico che può risultare prezioso per i data scientist e i business analyst. Grazie a queste funzionalità, un data warehouse può essere considerato un'unica fonte affidabile di dati aziendali.
+
+Un tipico data warehouse spesso include i seguenti elementi:
+
+Un database relazionale per archiviare e gestire i dati
+Una soluzione di estrazione, caricamento e trasformazione (ELT) per preparare i dati all'analisi
+Funzionalità di analisi statistiche, reporting e data mining
+Strumenti di analisi del cliente per visualizzare e presentare i dati agli utenti aziendali
+Altre applicazioni analitiche più sofisticate che generano informazioni dalle quali è possibile intraprendere azioni applicando algoritmi di data science e artificial intelligence (AI) o funzioni graph e spaziali che consentono ulteriori tipi di analisi dei dati su larga scala

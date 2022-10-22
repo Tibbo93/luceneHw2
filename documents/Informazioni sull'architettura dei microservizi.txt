@@ -1,0 +1,12 @@
+Se si desidera progettare un'applicazione multilingue, facilmente scalabile, facile da gestire e distribuire, altamente disponibile e che minimizzi gli errori, utilizzare l'architettura dei microservizi per progettare e distribuire un'applicazione cloud.
+
+In un'architettura di microservizi, ogni microservizio è proprietario di un'attività semplice e comunica con i client o con altri microservizi utilizzando meccanismi di comunicazione leggeri, quali le richieste delle API REST.
+
+Il seguente diagramma mostra l'architettura di un'applicazione composta da più microservizi.
+
+I microservizi consentono di progettare la tua applicazione come una raccolta di servizi liberamente accoppiati. I microservizi seguono il modello share-nothing ed eseguono come processi senza conservazione dello stato. Questo approccio semplifica la scalabilità e la manutenzione dell'applicazione.
+
+Il layer API è il punto di accesso per tutte le richieste client a un microservizio. Il layer API consente inoltre ai microservizi di comunicare tra loro tramite HTTP, gRPC e TCP/UDP.
+Il livello logico si concentra su un singolo task aziendale, riducendo al minimo le dipendenze dagli altri microservizi. Questo livello può essere scritto in una lingua diversa per ogni microservizio.
+Il layer del data store fornisce un meccanismo di persistenza, ad esempio un motore di memorizzazione del database, file di log e così via. Utilizzare un data store persistente separato per ogni microservizio. Oracle offre contenitori di database con più database collegabili che semplificano l'isolamento dei dati per la sicurezza, l'HA e la scalabilità dei microservizi. Inoltre, le applicazioni SaaS possono usufruire della multi-tenancy in modo sicuro. Inoltre, un database convergente porta la varietà di dati sotto un unico tetto per informazioni più ricche dai dati.
+In genere, ogni microservizio viene eseguito in un contenitore che fornisce un ambiente runtime leggero.
