@@ -28,7 +28,7 @@ import java.util.regex.Pattern;
 @NoArgsConstructor
 public class Searcher {
 
-    private final static String QUERY_PATTERN = "^(titolo|contenuto) (\"[a-zA-Z ]+\"|[a-zA-Z ]+)$";
+    private final static String QUERY_PATTERN = "^(titolo|contenuto) (\"[a-zA-Z ]+\"|([+-]?[a-zA-Z ])+)$";
 
     private Directory indexDirectory;
     private IndexReader reader;

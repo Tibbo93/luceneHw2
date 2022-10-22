@@ -2,7 +2,7 @@ package com.github.lucenehw;
 
 import java.util.Scanner;
 
-public class Test {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Fields allowed: 'titolo', 'contenuto");
